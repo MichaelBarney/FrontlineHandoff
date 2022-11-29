@@ -1,0 +1,31 @@
+{
+  "name": "frontline-quick-deploy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "twilio-run",
+    "deploy": "twilio-run deploy",
+    "okta": "node ./okta-setup.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@twilio/runtime-handler": "1.2.1",
+    "airtable": "^0.11.2",
+    "axios": "^0.26.0",
+    "twilio": "^3.75.0",
+    "twilio-run": "^3.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "node-fetch": "^2.6.7",
+    "opn": "^6.0.0",
+    "prompts": "^2.4.2"
+  }
+}
