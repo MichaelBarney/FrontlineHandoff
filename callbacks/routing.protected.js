@@ -26,9 +26,7 @@ exports.handler = async function (context, event, callback) {
     );
 
     // Remove chatbot from the conversation
-    console.log("DBG SID: ", event.WebhookSid);
     if (event.WebhookSid) {
-      console.log("DBG: Removing chatbot from the conversation.");
       await client.conversations
         .conversations(conversationSid)
         .webhooks(event.WebhookSid)
